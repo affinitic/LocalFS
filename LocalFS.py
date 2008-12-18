@@ -1,3 +1,4 @@
+#NOCHECK
 ##############################################################################
 # 
 # Copyright (c) 1999 Jonothan Farr 
@@ -50,7 +51,7 @@ from webdav.NullResource import NullResource
 from ZPublisher.HTTPResponse import HTTPResponse
 from Globals import MessageDialog, HTMLFile
 #from OFS.content_types import find_binary
-from zope.app.content_types import find_binary
+from zope.contenttype import find_binary
 from OFS.Image import Pdata
 from TreeDisplay.TreeTag import encode_str
 from OFS.CopySupport import _cb_encode, _cb_decode, CopyError, eNoData, eInvalid, eNotFound
